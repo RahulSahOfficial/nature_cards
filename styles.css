@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+.main-area {
+    margin: 2rem 9.5rem;
+}
+
+.top-line {
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.top-line h1 {
+    color: #607d8b;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.top-line button {
+    padding: 0.3rem 0.5rem;
+    width: 8rem;
+    font-size: 1.1rem;
+    color: #607d8b;
+    background: none;
+    border: 1px solid #607d8b;
+    cursor: pointer;
+    -webkit-transition: 0.1s ease-in-out background;
+    -o-transition: 0.1s ease-in-out background;
+    transition: 0.1s ease-in-out background;
+}
+
+.top-line button:hover {
+    color: white;
+    background: #607d8b;
+}
+
+.cards-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.each-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 18rem;
+    padding: 0.7rem;
+    -webkit-box-shadow: 0 0 10px 5px #00000024;
+    box-shadow: 0 0 10px 5px #00000024;
+    background: white;
+    -webkit-transition: 0.3s ease-in transform;
+    -o-transition: 0.3s ease-in transform;
+    transition: 0.3s ease-in transform;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.img-box {
+    position: relative;
+    margin-bottom: 0.7rem;
+    overflow: hidden;
+}
+
+.img-box img {
+    height: 100%;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    width: 100%;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.each-card:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.each-card:hover .img-box img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.each-card:hover .img-box .hover-state {
+    background: #00000000;
+}
+
+.img-box .hover-state {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000045;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.img-box span {
+    position: absolute;
+    bottom: 0.8rem;
+    left: 0.5rem;
+    background: #4caf50;
+    color: white;
+    padding: 0.15rem 0.2rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.text-box h2 {
+    font-size: 1.3rem;
+    color: #252525;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.text-box p {
+    color: grey;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+.pricing-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pricing-box .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pricing-box .price {
+    font-size: 1.4rem;
+    color: #e91e63;
+    font-weight: 500;
+}
+
+.pricing-box button {
+    background: #e91e63;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    width: 7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
